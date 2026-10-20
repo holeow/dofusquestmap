@@ -1,0 +1,357 @@
+<head><title>MAP DOFUS</title></head>
+
+<style>
+    body{
+        background-color: black;
+        color: lightgray;
+    }
+    .conteneur-images {
+  position: relative; /* Sert de repère pour l'enfant */
+  display: inline-block; /* S'adapte à la taille de l'image de fond */
+  width: 70%;
+  left:12.5%;
+}
+    .image-fond {
+  display: block;
+  width: 100%; /* Rend l'image responsive si besoin */
+    }
+
+  .image-zaap-frifri {
+  position: absolute; 
+  top: 29%;   /* Distance par rapport au haut de l'image de fond */
+  left: 12%;  /* Distance par rapport à la gauche de l'image de fond */
+  width: 3%;  /* Taille de la deuxième image (optionnel) */
+  cursor: pointer;
+  }
+
+  .image-zaap-koalak {
+  position: absolute; 
+  top: 64%;   /* Distance par rapport au haut de l'image de fond */
+  left: 40%;  /* Distance par rapport à la gauche de l'image de fond */
+  width: 3%;  /* Taille de la deuxième image (optionnel) */
+  cursor: pointer;
+  }
+
+    .image-rappel {
+  position: absolute; 
+  top: 61%;   /* Distance par rapport au haut de l'image de fond */
+  left: 42.5%;  /* Distance par rapport à la gauche de l'image de fond */
+  width: 2%;  /* Taille de la deuxième image (optionnel) */
+  cursor: pointer;
+  }
+
+
+  .image-savon {
+  position: absolute; 
+  top: 33%;   /* Distance par rapport au haut de l'image de fond */
+  left: 14%;  /* Distance par rapport à la gauche de l'image de fond */
+  width: 2%;  /* Taille de la deuxième image (optionnel) */
+  cursor: pointer;
+  }
+    .image-zaap-scara {
+  position: absolute; 
+  top: 82%;   /* Distance par rapport au haut de l'image de fond */
+  left: 50%;  /* Distance par rapport à la gauche de l'image de fond */
+  width: 3%;  /* Taille de la deuxième image (optionnel) */
+  cursor: pointer;
+  }
+
+
+  .image-zaap-bonta {
+  position: absolute; 
+  top: 16%;   /* Distance par rapport au haut de l'image de fond */
+  left: 38%;  /* Distance par rapport à la gauche de l'image de fond */
+  width: 3%;  /* Taille de la deuxième image (optionnel) */
+  cursor: pointer;
+  }
+    .image-zaap-amakna {
+    position: absolute;
+    top:49%;
+    left:61%;
+    width:3%;
+    cursor:pointer;
+  }
+      .image-zaap-astrub {
+    position: absolute;
+    top:33%;
+    left:56%;
+    width:3%;
+    cursor:pointer;
+  }
+      .image-sidoa {
+    position: absolute;
+    top:33.5%;
+    left:60%;
+    width:2.5%;
+    cursor:pointer;
+  }
+
+      .image-zaap-village {
+    position: absolute;
+    top:56%;
+    left:56%;
+    width:3%;
+    cursor:pointer;
+  }
+  .image-dd {
+    position: absolute;
+    top:50%;
+    left:64%;
+    width:2.5%;
+    cursor:pointer;
+  }
+    .image-viande {
+    position: absolute;
+    top:55%;
+    left:64%;
+    width:2.5%;
+    cursor:pointer;
+  }
+      .image-almanax {
+    position: absolute;
+    top:33%;
+    left:50.2%;
+    width:2.5%;
+    cursor:pointer;
+  }
+    .image-almaton {
+    position: absolute;
+    top:31%;
+    left:52%;
+    width:2.5%;
+    cursor:pointer;
+  }
+
+
+    .image-krala {
+    position: absolute;
+    top:93%;
+    left:52%;
+    width:2.5%;
+    cursor:pointer;
+  }
+  
+    .image-justi {
+    position: absolute;
+    top:61%;
+    left:62%;
+    width:2.5%;
+    cursor:pointer;
+  }
+      .image-sacfrigost {
+    position: absolute;
+    top:27%;
+    left:10%;
+    width:2.5%;
+    cursor:pointer;
+  }
+
+  .keru{
+    width: 10%;
+    cursor: pointer;
+  }
+  .xel{
+    width: 10%;
+    cursor: pointer;
+  }
+</style>
+
+<div class="conteneur-images">
+<img src="mondedesdouze.webp" class="image-fond">
+<img src="zaap.png" class="image-zaap-frifri" onclick="frifri(event)">
+<img src="zaap.png" class="image-zaap-bonta" onclick="bonta(event)">
+<img src="zaap.png" class="image-zaap-amakna" onclick="bonta(event)">
+<img src="zaap.png" class="image-zaap-astrub" onclick="astrub(event)">
+<img src="zaap.png" class="image-zaap-koalak" onclick="koalak(event)">
+
+<img src="dd.png" class="image-dd" onclick="amaknadd(event)">
+<img src="viande.png" class="image-viande" onclick="amaknavi(event)">
+<img src="zaap.png" class="image-almanax" onclick="alma(event)">
+<img src="almaton.png" class="image-almaton" onclick="almaton(event)">
+<img src="rappel.png" class="image-rappel" onclick="rappel(event)">
+
+
+<img src="zaap.png" class="image-zaap-scara" onclick="scara(event)">
+
+<img src="krala.png" class="image-krala" onclick="krala(event)">
+
+<img src="zaap.png" class="image-zaap-village" onclick="village(event)">
+
+<img src="justi.png" class="image-justi" onclick="justi(event)">
+<img src="pikdoa.png" class="image-sidoa" onclick="sidoa(event)">
+<img src="sacfrigost.png" class="image-sacfrigost" onclick="sacfrigost(event)">
+<img src="savon.png" class="image-savon" onclick="savon(event)">
+</div>
+<div>
+    <img src="poil.png" class="keru" alt="" onclick="keru(event)">
+    <img src="xel.png" class="xel" alt="" onclick="xela(event)">
+    <img src="xel.png" class="xel" alt="" onclick="xelb(event)">
+    <img src="xel.png" class="xel" alt="" onclick="xelc(event)">
+</div>
+<div>    
+  <img src="friandise.png" class="keru" alt="" onclick="sacfrigost(event)"><img src="kamas.png" class="keru" alt="" onclick="hdvfri(event)">
+  <span onclick="copypasta('Poil de chachachovage')" style="cursor: pointer;">Poil de chachachovage </span>, <span onclick="copypasta('Pince de Crabe Hijacob')" style="cursor: pointer;">Pince de Crabe Hijacob</span> , <span onclick="copypasta('Plume de Gélikan')" style="cursor: pointer;">Plume de Gélikan</span> , <span onclick="copypasta('Etoffe de rat bougri')" style="cursor: pointer;">Etoffe de rat bougri</span> , <span onclick="copypasta('Eau calme')" style="cursor: pointer;">Eau calme</span>
+</div>
+<script>
+    function frifri(e){
+        navigator.clipboard.writeText("/zaap -78,-41");
+    }
+
+    function bonta(e){
+        navigator.clipboard.writeText("/zaap -31,-56");
+    }
+    function alma(e){
+        navigator.clipboard.writeText("/zaap -5,-23");
+    
+    }
+    function scara(e){
+        navigator.clipboard.writeText("/zaap -1,24");
+    
+    }
+        function amakna(e){
+        navigator.clipboard.writeText("/zaap 3,-5");
+    
+    }
+
+    function amaknadd(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel 5,-5")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap 3,-5 ; /travel 5,-5 ; /travel 5,-5 ; /travel 5,-5")
+
+        }
+    }
+
+        function rappel(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel -15,-1")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap -16,1 ; /travel -15,-1 ; /travel -15,-1 ; /travel -15,-1")
+
+        }
+    }
+
+        function amaknavi(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel -7,-12")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap 3,-5 ; /travel 5,-4 ; /travel 5,-4 ; /travel 5,-4")
+
+        }
+    }
+
+        function almaton(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel -4,-24")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap -5,-23 ; /travel -4,-24 ; /travel -4,-24 ; /travel -4,-24")
+
+        }
+    }
+            function krala(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel 1,31")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap -1,24 ; /travel 1,31 ; /travel 1,31 ; /travel 1,31")
+
+        }
+    }
+    function village(e){
+        navigator.clipboard.writeText("/zaap -2,0");
+    
+    }
+    function justi(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel 4,4")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap -2,0 ; /travel 4,4 ; /travel 4,4 ; /travel 4,4")
+
+        }
+    }
+
+        function astrub(e){
+        navigator.clipboard.writeText("/zaap 5,-18");
+    
+    }
+    function sidoa(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel 8,-18")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap 5,-18 ; /travel 8,-18 ; /travel 8,-18 ; /travel 8,-18")
+
+        }
+    }
+        function keru(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel 3,-17")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap 5,-18 ; /travel 3,-17 ; /travel 3,-17 ; /travel 3,-17")
+
+        }
+    }
+            function xela(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel 6 -16")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap 5,-18 ; /travel 6 -16 ; /travel 6 -16 ; /travel 6 -16")
+
+        }
+    }
+            function xelb(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel 3 1")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap -2,0 ; /travel 3 1 ; /travel 3 1 ; /travel 3 1")
+
+        }
+    }
+            function xelc(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel -3 -24")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap -5,-23 ; /travel -3 -24 ; /travel -3 -24 ; /travel -3 -24")
+
+        }
+    }
+    function sacfrigost(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel -83 -44")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap -78,-41 ; /travel -83 -44 ; /travel -83 -44 ; /travel -83 -44")
+
+        }
+    }
+     function hdvfri(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel -77 -40")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap -78,-41 ; /travel -77 -40 ; /travel -77 -40 ; /travel -77 -40")
+
+        }
+    }
+    function savon(e){
+        if(e.ctrlKey){
+                    navigator.clipboard.writeText("/travel -77 -38")
+        }
+        else{
+        navigator.clipboard.writeText("/zaap -78,-41 ; /travel -77 -38 ; /travel -77 -38 ; /travel -77 -38")
+
+        }
+    }
+    function copypasta(str){
+      navigator.clipboard.writeText(str);
+    }
+</script>
